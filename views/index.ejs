@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=50, initial-scale=1.0">
+
+
+    <title>Node File Uploads</title>
+</head>
+
+<body>
+    <div>
+        <h1>Multer File upload</h1>
+    
+         <div style="width: 18rem;">
+            <img class="" width= 420  src="<%=typeof filename == 'undefined'? 'https://images.pexels.com/photos/1144256/pexels-photo-1144256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=350' : filename %> "
+                alt="Card image cap">
+            <div>
+                <h2>Multer File Uploader</h2>
+                <p><h4>Multer is a file/image uploader, used a lot with node application. It's really simple to use.</h4></p>
+
+                <form class="" action="/upload" method="POST" enctype="multipart/form-data">
+                    <div class="" >
+                        <input type="file" name="profilepic" class=""  required>
+                        <p>
+                            <%=typeof message == 'undefined'? '' : message %>
+                        </p>
+                    </div>
+                    <br />
+                    <button type="submit"  style= "height:30px">Submit</button>
+                </form>
+            </div>
+        </div>
+        <br>
+
+    </div>
+</body>
+
+</html>
